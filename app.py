@@ -6,7 +6,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 
 # 3) Load model and scalers
 model = load_model("model/my_model_improved.keras", compile=False)
