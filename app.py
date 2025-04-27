@@ -9,7 +9,7 @@ import joblib
 from tensorflow.keras.models import load_model
 
 # 3) Load model and scalers
-model = load_model("model/my_model_improved.h5")
+model = load_model("model/my_model_improved.h5", compile=False)
 feat_scaler = joblib.load("model/feat_scaler_improved.pkl")
 target_scaler = joblib.load("model/target_scaler_improved.pkl")
 
